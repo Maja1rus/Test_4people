@@ -1,0 +1,13 @@
+.bg-top {
+  background-image: url('../img/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@include mobile {
+
+  .bg-top {
+    background-position: left;
+  }
+}

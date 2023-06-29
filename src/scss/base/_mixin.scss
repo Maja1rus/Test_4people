@@ -1,0 +1,45 @@
+@mixin laptop {
+    @media screen and (max-width: $desktop-width) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (max-width: calc($laptop-width - 1px)) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media screen and (max-width: calc($tablet-width - 1px)) {
+        @content;
+    }
+}
+
+// Шрифты
+@mixin font($font: $font_regular) {
+    //Lato
+    @if $font == Lato {
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    @if $font == Lato-sb {
+        font-family: 'Lato', sans-serif;
+        font-weight: 600;
+        font-style: normal;
+    }
+
+    @if $font == Lato-b {
+        font-family: 'Lato', sans-serif;
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    @if $font == Lato-h {
+        font-family: 'Lato', sans-serif;
+        font-weight: 900;
+        font-style: normal;
+    }
+}
