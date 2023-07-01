@@ -1,0 +1,105 @@
+<section class="order">
+    <div class="container">
+        <h2 class="h2">
+            Оформление <span class="accent">Заказа</span>
+        </h2>
+        <div class="order__subtitle">
+            Перед заполнением формы ознакомьтесь с нашей схемой работы!
+        </div>
+        <div class="order__wrapper">
+            <div class="order__item">
+                <svg width="100" height="100">
+                    <use xlink:href="img/icons/sprites.svg#icon-order-1"></use>
+                </svg>
+                <span class="order__text">
+                    Lorem ipsum dolorsit amet
+                </span>
+            </div>
+            <div class="order__item">
+                <svg width="100" height="100">
+                    <use xlink:href="img/icons/sprites.svg#icon-order-2"></use>
+                </svg>
+                <span class="order__text">
+                    Сonsecteturadipiscing elit
+                </span>
+            </div>
+            <div class="order__item">
+                <svg width="100" height="100">
+                    <use xlink:href="img/icons/sprites.svg#icon-order-3"></use>
+                </svg>
+                <span class="order__text">
+                    Sed do eiusmod tempor
+                </span>
+            </div>
+            <div class="order__item">
+                <svg width="100" height="100">
+                    <use xlink:href="img/icons/sprites.svg#icon-order-4"></use>
+                </svg>
+                <span class="order__text">
+                    Esse cillum doloreeu fugiat
+                </span>
+            </div>
+            <div class="order__item">
+                <svg width="100" height="100">
+                    <use xlink:href="img/icons/sprites.svg#icon-order-5"></use>
+                </svg>
+                <span class="order__text">
+                    Excepteur sint occaecat cupidatat non proident
+                </span>
+            </div>
+        </div>
+
+        <form class="order__form form" method="post" enctype="multipart/form-data">
+            <label class="form__select order__select">
+                <div class="itc-select" id="select-2">
+                    <button type="button" class="itc-select__toggle" name="type-pay" value="Выберите тип системы" data-select="toggle" data-index="1">
+                        Выберите тип системы
+                    </button>
+                    
+                    <div class="itc-select__dropdown">
+                        <ul class="itc-select__options">
+                            <li class="itc-select__option itc-select__option_selected" data-select="option" data-value="Sed ut perspiciatis" data-index="0">Sed ut perspiciatis</li>
+                            <li class="itc-select__option" data-select="option" data-value="Nemo enim ipsam" data-index="1">Nemo enim ipsam</li>
+                            <li class="itc-select__option" data-select="option" data-value="Et harum quidem" data-index="2">Et harum quidem</li>
+                            <li class="itc-select__option" data-select="option" data-value="Temporibus autem" data-index="3">Temporibus autem</li>
+                            <li class="itc-select__option" data-select="option" data-value="Itaque earum rerum" data-index="4">Itaque earum rerum</li>
+                            <li class="itc-select__option" data-select="option" data-value="Sed ut perspiciatis" data-index="5">Sed ut perspiciatis</li>
+                            <li class="itc-select__option" data-select="option" data-value="Nemo enim ipsam" data-index="6">Nemo enim ipsam</li>
+                            <li class="itc-select__option" data-select="option" data-value="Et harum quidem" data-index="7">Et harum quidem</li>
+                            <li class="itc-select__option" data-select="option" data-value="Temporibus autem" data-index="8">Temporibus autem</li>
+                            <li class="itc-select__option" data-select="option" data-value="Itaque earum rerum" data-index="9">Itaque earum rerum</li>
+                        </ul>
+                    </div>
+                </div>
+            </label>
+
+            <label class="form__input order__input">
+                <input type="email" placeholder='Ваш e-mail' name="email">
+            </label>  
+            <label class="form__input order__input">
+                <input type="text" placeholder='Ваше имя'name="name">
+            </label>  
+
+            <label class="order__range range">
+                <div class="range__value">
+                    <span>Sed ut perspiciatis, unde omnis iste natus</span>
+                    <span class="range__count">75 %</span>            
+                </div>
+
+                <div class="range__slider">
+                    <input type="range" step="1" value="75" name="percent">
+                </div>
+            </label>
+
+            <label class="form__file order__file" name="file">
+                <input type="file" name="file">
+                <svg width="18" height="21">
+                    <use xlink:href="img/icons/sprites.svg#icon-file"></use>
+                </svg>
+                <span class="input-file-btn">Прикрепить файл</span>           
+            </label>
+
+          <button type='submit' class="button buton_common order__button">Отправить</button>
+        </form>
+    </div>
+</section>   

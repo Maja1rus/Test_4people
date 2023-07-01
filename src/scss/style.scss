@@ -1,3 +1,5 @@
+//Vendors
+@import './vendors/select';
 
 // Base
 @import './base/variables';
@@ -5,8 +7,12 @@
 @import './base/fonts';
 @import './base/base';
 @import './base/button';
+@import './base/form';
+@import './base/range';
 
 //blocks
 @import './blocks/bg';
 @import './blocks/header';
 @import './blocks/first-screen';
+@import './blocks/order';
+@import './blocks/footer';
