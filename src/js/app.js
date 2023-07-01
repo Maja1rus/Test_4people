@@ -1,5 +1,6 @@
-import Slider from "./modules/input-range.js";
+import { blockFixed } from "./modules/fixed.js";
 import {menu} from "./modules/menu.js";
+import Slider from "./modules/input-range.js";
 import ItcCustomSelect from "./modules/select.js";
 
 // menu
@@ -7,6 +8,7 @@ try {
     const header = document.querySelector('.header');
     if (header) {
         menu(header)
+        blockFixed(header, 500);
     }
 } catch (error) {
     console.log(error);
@@ -32,4 +34,4 @@ try {
 }
 
 // select
-new ItcCustomSelect('#select-2');
+new ItcCustomSelect('#select-order');
