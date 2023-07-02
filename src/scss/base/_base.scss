@@ -78,12 +78,6 @@ a {
   text-transform: uppercase;
 }
 
-polyline,
-path {
-  fill: inherit;
-  stroke: inherit;
-}
-
 @include tablet {
   
   .h1 {

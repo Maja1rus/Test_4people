@@ -237,12 +237,6 @@ a {
   text-transform: uppercase;
 }
 
-polyline,
-path {
-  fill: inherit;
-  stroke: inherit;
-}
-
 .button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -369,18 +363,6 @@ path {
   display: none;
 }
 
-.form__file:hover {
-  background-color: #5eafe6;
-}
-
-.form__file:hover span {
-  color: #fff;
-}
-
-.form__file:hover svg use {
-  fill: #fff;
-}
-
 .range {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -390,6 +372,8 @@ path {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
+  -ms-touch-action: none;
+      touch-action: none;
 }
 
 .range__value {
@@ -1255,5 +1239,19 @@ input::-moz-focus-outer {
 
   .order__button {
     margin: 10px auto 0 auto;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .form__file:hover {
+    background-color: #5eafe6;
+  }
+
+  .form__file:hover span {
+    color: #fff;
+  }
+
+  .form__file:hover svg use {
+    fill: #fff;
   }
 }

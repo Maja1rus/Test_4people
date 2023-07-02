@@ -51,20 +51,26 @@
   input {
     display: none;
   }
+}
 
-  &:hover {
-    background-color: $common-hover;
 
-    span {
-      color: $color-white;
-    }
+@media (hover: hover) and (pointer: fine) {
 
-    svg {
-      
-      use {
-        fill: $color-white;
+  .form__file {
+    
+    &:hover {
+      background-color: $common-hover;
+  
+      span {
+        color: $color-white;
+      }
+  
+      svg {
+        
+        use {
+          fill: $color-white;
+        }
       }
     }
   }
 }
-
