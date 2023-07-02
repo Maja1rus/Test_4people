@@ -6,6 +6,7 @@
   font-size: 13px;
   text-transform: uppercase;
   border-radius: 4px;
+  color: inherit;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
@@ -15,10 +16,6 @@
   color: $color-white;
   border: 1px solid $color-white;
   background-color: $common-color;
-
-  &:hover {
-    background-color: $common-hover;
-  }
 }
 
 .buton_white {
@@ -26,8 +23,21 @@
   color: #2A2B30;
   background-color: $color-white;
   border: 1px solid #6F6D7B;
+}
 
-  &:hover {
-    background-color: $color-gray;
+@media (hover: hover) and (pointer: fine) {
+
+  .buton_common {
+    
+    &:hover {
+      background-color: $common-hover;
+    }
+  }
+
+  .buton_white {
+
+    &:hover {
+      background-color: $color-gray;
+    }
   }
 }

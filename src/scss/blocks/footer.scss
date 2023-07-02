@@ -39,10 +39,6 @@
 .footer__pay-text {
   color: #C3C3C3;
   transition: color 0.2s ease-in-out;
-
-  &:hover {
-    color: $color-white;
-  }
 }
 
 .footer__callback {
@@ -71,10 +67,6 @@
 .footer__callback-text {
   color: $color-white;
   transition: color 0.2s ease-in-out;
-
-  &:hover {
-    color: $common-hover;
-  }
 }
 
 @include laptop {
@@ -122,3 +114,19 @@
   }
 }
 
+@media (hover: hover) and (pointer: fine) {
+ 
+  .footer__pay-text {
+    
+    &:hover {
+      color: $color-white;
+    }
+  }
+
+  .footer__callback-text {
+
+    &:hover {
+      color: $common-hover;
+    }
+  }
+}

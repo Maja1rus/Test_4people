@@ -69,7 +69,6 @@
 }
 
 .order__select {
-
   scrollbar-color: $common-color #3D4050;
   scrollbar-width: 7px;
 
@@ -98,12 +97,22 @@
         transform: rotate(0deg);
       }
     }
+
+    .itc-select__dropdown {
+      max-height: 180px;
+      opacity: 1;
+      z-index: 2;
+    }
   }
   
   .itc-select__toggle {
     @include font($font_regular);
     height: 48px;
     font-size: 18px;
+    background-color: rgba(255, 255, 255, 0.85);
+    color: $bg;
+    transition: all 0.2s ease-in-out;
+    overflow: hidden;
 
     &::after {
       width: 20px;
@@ -114,7 +123,9 @@
   }
 
   .itc-select__dropdown {
+    display: block;
     top: 47px;
+    max-height: 0;
     max-height: 180px;
     font-size: 18px;
     background-color: $bg;
@@ -122,6 +133,9 @@
     border: 1px solid #3D4050;
     border-top: none;
     border-radius: 0 0 3px 3px;
+    opacity: 0;
+    z-index: -2;
+    transition: all 0.2s ease-in-out;
   }
 
   .itc-select__option {

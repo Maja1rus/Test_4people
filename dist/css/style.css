@@ -251,6 +251,7 @@ a {
   font-size: 13px;
   text-transform: uppercase;
   border-radius: 4px;
+  color: inherit;
   cursor: pointer;
   -webkit-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -264,19 +265,11 @@ a {
   background-color: #3E9CDC;
 }
 
-.buton_common:hover {
-  background-color: #5eafe6;
-}
-
 .buton_white {
   padding: 13px 10px 12px 10px;
   color: #2A2B30;
   background-color: #fff;
   border: 1px solid #6F6D7B;
-}
-
-.buton_white:hover {
-  background-color: #BBBBBB;
 }
 
 .form__input {
@@ -729,12 +722,24 @@ input::-moz-focus-outer {
           transform: rotate(0deg);
 }
 
+.order__select .itc-select_show .itc-select__dropdown {
+  max-height: 180px;
+  opacity: 1;
+  z-index: 2;
+}
+
 .order__select .itc-select__toggle {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-style: normal;
   height: 48px;
   font-size: 18px;
+  background-color: rgba(255, 255, 255, 0.85);
+  color: #272733;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  overflow: hidden;
 }
 
 .order__select .itc-select__toggle::after {
@@ -745,7 +750,9 @@ input::-moz-focus-outer {
 }
 
 .order__select .itc-select__dropdown {
+  display: block;
   top: 47px;
+  max-height: 0;
   max-height: 180px;
   font-size: 18px;
   background-color: #272733;
@@ -753,6 +760,11 @@ input::-moz-focus-outer {
   border: 1px solid #3D4050;
   border-top: none;
   border-radius: 0 0 3px 3px;
+  opacity: 0;
+  z-index: -2;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .order__select .itc-select__option:hover {
@@ -861,10 +873,6 @@ input::-moz-focus-outer {
   transition: color 0.2s ease-in-out;
 }
 
-.footer__pay-text:hover {
-  color: #fff;
-}
-
 .footer__callback {
   position: relative;
   display: -webkit-box;
@@ -905,10 +913,6 @@ input::-moz-focus-outer {
   -webkit-transition: color 0.2s ease-in-out;
   -o-transition: color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out;
-}
-
-.footer__callback-text:hover {
-  color: #5eafe6;
 }
 
 @media screen and (max-width: 1320px) {
@@ -1243,6 +1247,14 @@ input::-moz-focus-outer {
 }
 
 @media (hover: hover) and (pointer: fine) {
+  .buton_common:hover {
+    background-color: #5eafe6;
+  }
+
+  .buton_white:hover {
+    background-color: #BBBBBB;
+  }
+
   .form__file:hover {
     background-color: #5eafe6;
   }
@@ -1253,5 +1265,13 @@ input::-moz-focus-outer {
 
   .form__file:hover svg use {
     fill: #fff;
+  }
+
+  .footer__pay-text:hover {
+    color: #fff;
+  }
+
+  .footer__callback-text:hover {
+    color: #5eafe6;
   }
 }
